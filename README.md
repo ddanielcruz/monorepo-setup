@@ -10,5 +10,5 @@ Basic setup of a Node.js monorepo project using npm.
 
 - [x] Setup TypeScript with shared configuration
 - [ ] Setup ESLint with shared configuration
-- [ ] Setup Jest with shared configuration
+- [x] Setup Jest with shared configuration
 - [ ] Setup run and deploy scripts

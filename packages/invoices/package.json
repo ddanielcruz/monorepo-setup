@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "compile": "rm -rf dist && tsc",
-    "dev": "tsnd --transpile-only --ignore-watch node_modules src/index.ts",
-    "test": "echo \"All tests passed!\""
+    "dev": "tsnd --transpile-only --ignore-watch node_modules src/index.ts"
   },
   "dependencies": {
     "@monorepo/core": "^1.0.0"
