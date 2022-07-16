@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Basic setup of a Node.js monorepo project using npm.",
+  "private": true,
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "test": "npm run test --workspaces"
+  },
+  "devDependencies": {},
+  "workspaces": [
+    "./packages/*"
+  ]
+}
