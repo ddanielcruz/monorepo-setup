@@ -8,6 +8,7 @@
   },
   "scripts": {
     "compile": "npm run compile --workspaces --if-present",
+    "lint": "eslint .",
     "test": "jest --passWithNoTests --noStackTrace --maxWorkers 4",
     "test:watch": "npm run test -- --watch",
     "test:ci": "npm run test -- --coverage"
