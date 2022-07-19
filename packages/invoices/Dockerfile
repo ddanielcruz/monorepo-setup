@@ -18,9 +18,9 @@ FROM node:16-alpine
 WORKDIR /root/app
 
 # Copy project dependencies
-# TODO: Ignore everything except dist and package*.json
 COPY package.json package-lock.json ./
 COPY --from=build /root/build/packages /root/app/packages
+RUN cd packages && find . -type f -not -wholename '*/dist*' -not -wholename '*package*.json' -delete
 
 # Install project production dependencies
 ENV NODE_ENV production
