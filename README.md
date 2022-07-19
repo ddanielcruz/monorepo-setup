@@ -9,9 +9,19 @@ Setup of a Node.js monorepo project using npm, with TypeScript, Jest and ESLint/
 
 ## Commands
 
-| Command                                                | Description                                                        |
-| ------------------------------------------------------ | ------------------------------------------------------------------ |
-| `npm init --scope=@<scope> -y -w ./packages/<package>` | Initialize a package in the monorepo scope                         |
-| `npm run <script> -ws --if-present`                    | Run a script on all packages, ignoring packages without the script |
-| `npm run <script> -w @<scope>/<package>`               | Run a script on a specific package                                 |
-| `npm install <dependency> -w @<scope>/<package>`       | Installs a dependency on a local package                           |
+```sh
+# Initialize a package in the monorepo scope
+npm init --scope=@<scope> -y -w ./packages/<package>
+
+# Run a script on all packages, ignoring packages without the script
+npm run <script> -ws --if-present
+
+# Run a script on a specific package
+npm run <script> -w @<scope>/<package>
+
+# Installs a dependency on a local package
+npm install <dependency> -w @<scope>/<package>
+
+# Builds a package with Docker using root folder context
+docker image build -t <image> -f <dockerfile-path>
+```
