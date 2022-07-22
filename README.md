@@ -22,6 +22,9 @@ npm run <script> -w @<scope>/<package>
 # Installs a dependency on a local package
 npm install <dependency> -w @<scope>/<package>
 
+# Install a local package
+npm install @<scope>/<package> -w @<scope>/<package>
+
 # Builds a package with Docker using root folder context
 docker image build -t <image> -f <dockerfile-path>
 ```
